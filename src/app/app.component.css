@@ -1,3 +1,7 @@
+h1 {
+  font-family: monospace;
+}
+
 .card {
   width: 23%;
   background: ghostwhite;
