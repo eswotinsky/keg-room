@@ -1,0 +1,10 @@
+.card {
+  width: 23%;
+  background: ghostwhite;
+  margin: 1%;
+  font-weight: bold;
+}
+.card-title {
+  text-align: center;
+  margin-top: 5%;
+}
