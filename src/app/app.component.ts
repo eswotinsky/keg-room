@@ -8,14 +8,18 @@ import { Keg } from './models/keg.model';
 })
 export class AppComponent {
   kegs: Keg[] = [
-    new Keg('Beer1', 'Brand1', 3, 4),
-    new Keg('Beer2', 'Brand2', 3, 4),
-    new Keg('Beer3', 'Brand2', 3, 4),
-    new Keg('Beer4', 'Brand1', 3, 4),
-    new Keg('Beer5', 'Brand2', 3, 4),
-    new Keg('Beer6', 'Brand3', 3, 4),
-    new Keg('Beer7', 'Brand3', 3, 4)
+    new Keg('Baby Boi IPA', 'Belltown Brewery', 6, 11),
+    new Keg('Basic Bisque', 'CSS Suds', 4, 5),
+    new Keg('Catfish Stout', 'IGA', 5, 8),
+    new Keg('Firebrick', 'CSS Suds', 4, 5),
+    new Keg('Maca Madness', 'Josh\'s Juices', 5, 4),
+    new Keg('PB \'n Eggz', 'Hipster Hops', 4, 6),
   ];
+
+  addKeg(newKeg: Keg) {
+    this.kegs.push(newKeg);
+  }
+
   employee = false;
   employeeLogin() {
     this.employee = true;

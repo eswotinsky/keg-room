@@ -4,8 +4,8 @@
 </div>
 
 <div class="container">
-  <button (click)="employeeLogin()" type="button">Employee login</button>
-  <button (click)="employeeLogout()" type="button">Employee logout</button>
+  <!-- <button (click)="employeeLogin()" type="button">Employee login</button>
+  <button (click)="employeeLogout()" type="button">Employee logout</button> -->
 
   <div class="row">
     <div *ngFor="let thisKeg of kegs" class="card">
@@ -14,7 +14,7 @@
       </div>
       <div class="card-body">
         <p>{{thisKeg.brand}}</p>
-        <p>{{thisKeg.price}}/pint</p>
+        <p>${{thisKeg.price}}/pint</p>
         <p>{{thisKeg.alcoholContent}}% ABV</p>
         <div style="text-align:center">
           <button (click)="thisKeg.orderPint()" class="btn-success order-button">Order</button>

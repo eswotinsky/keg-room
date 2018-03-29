@@ -1,0 +1,12 @@
+<button (click)="toggleKegForm()">Add a keg</button>
+<form id="keg-form">
+  <label for="newKegName">New keg name:</label>
+  <input #newKegName type="text" name="newKegName"><br>
+  <label for="newKegBrand">New keg brand:</label>
+  <input #newKegBrand type="text" name="newKegBrand"><br>
+  <label for="newKegPrice">New keg price (per pint)</label>
+  <input #newKegPrice type="text" name="newKegPrice"><br>
+  <label for="newKegABV">ABV %</label>
+  <input #newKegABV type="text" name="newKegABV"><br>
+  <button (click)="submitKegForm(newKegName.value, newKegBrand.value, newKegPrice.value, newKegABV.value)" type="button">Add</button>
+</form>
